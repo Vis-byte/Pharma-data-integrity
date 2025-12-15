@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pharma Data Integrity Platform</title>
 
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
@@ -14,133 +20,97 @@
 <!-- HERO -->
 <section class="min-h-screen flex items-center justify-center bg-white">
   <div class="text-center max-w-3xl px-6">
-    <h1 data-aos="fade-up"
-        class="text-5xl font-bold mb-6">
-      Pharma Data Integrity Platform
+    <h1 data-aos="fade-up" class="text-5xl font-bold mb-6">
+      Pharma Data Integrity & Security
     </h1>
-
-    <p data-aos="fade-up" data-aos-delay="150"
-       class="text-gray-600 text-lg mb-8">
-      Helping pharmaceutical laboratories prove data integrity
-      and maintain audit readiness using ALCOA principles.
+    <p data-aos="fade-up" data-aos-delay="150" class="text-gray-600 text-lg mb-8">
+      Helping pharmaceutical laboratories prove that data is authentic,
+      unchanged, and audit-ready using cryptographic integrity controls.
     </p>
-
-    <a data-aos="fade-up" data-aos-delay="300"
-       href="#alcoa"
-       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition">
-      Learn More
-    </a>
   </div>
 </section>
 
 <!-- PROBLEM -->
 <section class="py-24 bg-gray-50">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 data-aos="fade-up"
-        class="text-4xl font-bold mb-6">
-      The Problem in Pharma Labs
+    <h2 data-aos="fade-up" class="text-4xl font-bold mb-6">
+      The Data Integrity Challenge
     </h2>
-
-    <p data-aos="fade-up" data-aos-delay="100"
-       class="text-gray-700 max-w-4xl">
-      Many pharmaceutical laboratories struggle to prove that analytical
-      and batch data from systems such as HPLC, GC, LIMS, and ELN has not
-      been modified. Missing audit trails, manual processes, and fragmented
-      systems create stress during inspections and audits.
+    <p data-aos="fade-up" data-aos-delay="100" class="text-gray-700 max-w-4xl">
+      Modern pharma labs rely on multiple systems such as HPLC, GC, LIMS, and ELN.
+      In many cases, these systems lack strong mechanisms to prove that data has
+      not been modified, overwritten, or manipulated.
     </p>
   </div>
 </section>
 
 <!-- ALCOA -->
-<section id="alcoa" class="py-24 bg-white overflow-hidden">
+<section class="py-24 bg-white">
   <div class="max-w-6xl mx-auto px-6">
 
-    <h2 data-aos="fade-up"
-        class="text-4xl font-bold mb-8">
-      What is ALCOA and Why It Matters
+    <h2 data-aos="fade-up" class="text-4xl font-bold mb-8">
+      ALCOA Principles Explained
     </h2>
 
-    <p data-aos="fade-up" data-aos-delay="100"
-       class="text-gray-700 max-w-4xl mb-6">
-      ALCOA is a set of data integrity principles followed in regulated
-      pharmaceutical environments to ensure that data is reliable,
-      traceable, and trustworthy throughout its lifecycle.
-    </p>
-
-    <p data-aos="fade-up" data-aos-delay="200"
-       class="text-gray-700 max-w-4xl mb-14">
-      Regulatory authorities expect laboratories to demonstrate ALCOA
-      compliance. In real lab environments, this is often difficult due to
-      limited visibility into data changes and weak audit evidence.
+    <p data-aos="fade-up" data-aos-delay="100" class="text-gray-700 max-w-4xl mb-12">
+      ALCOA is a globally accepted framework used by regulators to ensure
+      data integrity in pharmaceutical environments. It ensures data is
+      trustworthy and defensible during audits.
     </p>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <div data-aos="fade-up" data-aos-delay="100"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Attributable</strong>
-        <p class="text-gray-600 mt-2">
-          Every action and data entry is linked to a specific user and system.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="150"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Legible</strong>
-        <p class="text-gray-600 mt-2">
-          Data remains readable, structured, and understandable.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="200"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Contemporaneous</strong>
-        <p class="text-gray-600 mt-2">
-          Data is recorded at the time the activity occurs.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="250"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Original</strong>
-        <p class="text-gray-600 mt-2">
-          Original source data is preserved without overwriting.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="300"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Accurate</strong>
-        <p class="text-gray-600 mt-2">
-          Data accuracy is protected using integrity controls.
-        </p>
-      </div>
-
-      <div data-aos="fade-up" data-aos-delay="350"
-           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
-        <strong>Complete & Consistent</strong>
-        <p class="text-gray-600 mt-2">
-          Full data history is maintained without unexplained gaps.
-        </p>
-      </div>
+      <div data-aos="fade-up" class="bg-gray-50 p-6 rounded-xl shadow">Attributable – Every action is linked to a user</div>
+      <div data-aos="fade-up" data-aos-delay="100" class="bg-gray-50 p-6 rounded-xl shadow">Legible – Data remains readable</div>
+      <div data-aos="fade-up" data-aos-delay="150" class="bg-gray-50 p-6 rounded-xl shadow">Contemporaneous – Data recorded on time</div>
+      <div data-aos="fade-up" data-aos-delay="200" class="bg-gray-50 p-6 rounded-xl shadow">Original – Source data preserved</div>
+      <div data-aos="fade-up" data-aos-delay="250" class="bg-gray-50 p-6 rounded-xl shadow">Accurate – Protected against alteration</div>
+      <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-50 p-6 rounded-xl shadow">Complete & Consistent – Full audit trail</div>
     </div>
 
   </div>
 </section>
 
-<!-- SOLUTION -->
+<!-- SECURITY VISUAL -->
 <section class="py-24 bg-gray-50">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 data-aos="fade-up"
-        class="text-4xl font-bold mb-6">
-      Our Approach
+
+    <h2 data-aos="fade-up" class="text-4xl font-bold mb-10">
+      Security Risks Without Integrity Controls
     </h2>
 
-    <p data-aos="fade-up" data-aos-delay="100"
-       class="text-gray-700 max-w-4xl">
-      This platform focuses on monitoring data integrity rather than
-      simply storing data. It provides traceability, tamper detection,
-      and clear audit evidence to help laboratories demonstrate trust
-      in their data.
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div data-aos="fade-up" class="bg-white p-6 rounded-xl shadow">
+        Data can be manually edited
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150" class="bg-white p-6 rounded-xl shadow">
+        Changes go undetected
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-6 rounded-xl shadow">
+        Audit confidence is lost
+      </div>
+    </div>
+
+    <!-- CHART -->
+    <div data-aos="fade-up" class="bg-white p-8 rounded-xl shadow">
+      <h3 class="text-2xl font-semibold mb-6">
+        Effect of Hash-Based Data Integrity
+      </h3>
+      <canvas id="integrityChart" height="120"></canvas>
+    </div>
+
+  </div>
+</section>
+
+<!-- HASH EXPLANATION -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 data-aos="fade-up" class="text-4xl font-bold mb-6">
+      How Hash Values Prevent Tampering
+    </h2>
+    <p data-aos="fade-up" data-aos-delay="100" class="text-gray-700 max-w-4xl">
+      A cryptographic hash creates a unique fingerprint for each data record.
+      Even a small change in data results in a completely different hash,
+      immediately exposing unauthorized modification.
     </p>
   </div>
 </section>
@@ -148,19 +118,45 @@
 <!-- DISCLAIMER -->
 <section class="py-12 bg-gray-100 text-center">
   <p class="text-sm text-gray-500 max-w-3xl mx-auto">
-    This is an early-stage platform designed to support compliance efforts.
-    It does not replace regulatory responsibilities or validation activities.
+    This platform is an early-stage solution designed to support compliance.
+    It does not replace regulatory validation or quality responsibilities.
   </p>
 </section>
 
 <!-- AOS INIT -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({
-    duration: 900,
-    easing: 'ease-out-cubic',
-    once: true
-  });
+  AOS.init({ duration: 900, once: true });
+</script>
+
+<!-- CHART SCRIPT -->
+<script>
+const ctx = document.getElementById('integrityChart');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Undetected Changes', 'Audit Confidence', 'Tamper Evidence'],
+    datasets: [
+      {
+        label: 'Without Hash Protection',
+        data: [80, 30, 10]
+      },
+      {
+        label: 'With Hash Protection',
+        data: [5, 90, 95]
+      }
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100
+      }
+    }
+  }
+});
 </script>
 
 </body>
