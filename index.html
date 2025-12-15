@@ -1,90 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Pharma Data Integrity Platform</title>
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>Pharma Data Integrity Platform</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation (Rockstar-style scroll reveal) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-50 text-gray-900">
+
 <!-- HERO -->
-<section class="bg-white py-16">
-<div class="max-w-6xl mx-auto px-6 text-center">
-<h1 class="text-4xl font-bold mb-4">
-     Data Integrity & Audit Readiness for Pharma Labs
-</h1>
-<p class="text-lg text-gray-600 mb-6">
-     Prevent data tampering. Maintain ALCOA+. Pass audits with confidence.
-</p>
-<a href="#contact"
-      class="bg-blue-600 text-white px-6 py-3 rounded-md font-semibold">
-      Request Early Access
-</a>
-</div>
+<section class="min-h-screen flex items-center justify-center bg-white">
+  <div class="text-center max-w-3xl px-6">
+    <h1 data-aos="fade-up"
+        class="text-5xl font-bold mb-6">
+      Pharma Data Integrity Platform
+    </h1>
+
+    <p data-aos="fade-up" data-aos-delay="150"
+       class="text-gray-600 text-lg mb-8">
+      Helping pharmaceutical laboratories prove data integrity
+      and maintain audit readiness using ALCOA principles.
+    </p>
+
+    <a data-aos="fade-up" data-aos-delay="300"
+       href="#alcoa"
+       class="inline-block bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition">
+      Learn More
+    </a>
+  </div>
 </section>
+
 <!-- PROBLEM -->
-<section class="py-14">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-2xl font-bold mb-4">The Problem</h2>
-<p class="text-gray-700">
-     Pharma labs struggle to prove that analytical and batch data
-     from HPLC, GC, LIMS, ELN, and DMS systems has not been modified.
-     Missing audit trails and manual controls create compliance risks
-     and audit stress.
-</p>
-</div>
+<section class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 data-aos="fade-up"
+        class="text-4xl font-bold mb-6">
+      The Problem in Pharma Labs
+    </h2>
+
+    <p data-aos="fade-up" data-aos-delay="100"
+       class="text-gray-700 max-w-4xl">
+      Many pharmaceutical laboratories struggle to prove that analytical
+      and batch data from systems such as HPLC, GC, LIMS, and ELN has not
+      been modified. Missing audit trails, manual processes, and fragmented
+      systems create stress during inspections and audits.
+    </p>
+  </div>
 </section>
+
+<!-- ALCOA -->
+<section id="alcoa" class="py-24 bg-white overflow-hidden">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 data-aos="fade-up"
+        class="text-4xl font-bold mb-8">
+      What is ALCOA and Why It Matters
+    </h2>
+
+    <p data-aos="fade-up" data-aos-delay="100"
+       class="text-gray-700 max-w-4xl mb-6">
+      ALCOA is a set of data integrity principles followed in regulated
+      pharmaceutical environments to ensure that data is reliable,
+      traceable, and trustworthy throughout its lifecycle.
+    </p>
+
+    <p data-aos="fade-up" data-aos-delay="200"
+       class="text-gray-700 max-w-4xl mb-14">
+      Regulatory authorities expect laboratories to demonstrate ALCOA
+      compliance. In real lab environments, this is often difficult due to
+      limited visibility into data changes and weak audit evidence.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div data-aos="fade-up" data-aos-delay="100"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Attributable</strong>
+        <p class="text-gray-600 mt-2">
+          Every action and data entry is linked to a specific user and system.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="150"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Legible</strong>
+        <p class="text-gray-600 mt-2">
+          Data remains readable, structured, and understandable.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Contemporaneous</strong>
+        <p class="text-gray-600 mt-2">
+          Data is recorded at the time the activity occurs.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="250"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Original</strong>
+        <p class="text-gray-600 mt-2">
+          Original source data is preserved without overwriting.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="300"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Accurate</strong>
+        <p class="text-gray-600 mt-2">
+          Data accuracy is protected using integrity controls.
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="350"
+           class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+        <strong>Complete & Consistent</strong>
+        <p class="text-gray-600 mt-2">
+          Full data history is maintained without unexplained gaps.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- SOLUTION -->
-<section class="bg-white py-14">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-2xl font-bold mb-4">Our Solution</h2>
-<ul class="space-y-3 text-gray-700">
-<li>✔ Immutable audit trails</li>
-<li>✔ Tamper detection using cryptographic hashing</li>
-<li>✔ Vendor-agnostic (HPLC, GC, LIMS, ELN)</li>
-<li>✔ Designed around ALCOA+ principles</li>
-<li>✔ Clear evidence for auditors</li>
-</ul>
-</div>
+<section class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 data-aos="fade-up"
+        class="text-4xl font-bold mb-6">
+      Our Approach
+    </h2>
+
+    <p data-aos="fade-up" data-aos-delay="100"
+       class="text-gray-700 max-w-4xl">
+      This platform focuses on monitoring data integrity rather than
+      simply storing data. It provides traceability, tamper detection,
+      and clear audit evidence to help laboratories demonstrate trust
+      in their data.
+    </p>
+  </div>
 </section>
-<!-- COMPLIANCE -->
-<section class="py-14">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-2xl font-bold mb-4">Compliance Focus</h2>
-<p class="text-gray-700">
-     Built to support GLP, ALCOA+, and 21 CFR Part 11 requirements.
-     Every data change is attributable, timestamped, and verifiable.
-</p>
-</div>
+
+<!-- DISCLAIMER -->
+<section class="py-12 bg-gray-100 text-center">
+  <p class="text-sm text-gray-500 max-w-3xl mx-auto">
+    This is an early-stage platform designed to support compliance efforts.
+    It does not replace regulatory responsibilities or validation activities.
+  </p>
 </section>
-<!-- WHO -->
-<section class="bg-white py-14">
-<div class="max-w-6xl mx-auto px-6">
-<h2 class="text-2xl font-bold mb-4">Who It's For</h2>
-<ul class="text-gray-700 space-y-2">
-<li>• Quality Assurance (QA)</li>
-<li>• Quality Control (QC)</li>
-<li>• Validation & Compliance Teams</li>
-<li>• Pharma IT & Data Integrity Teams</li>
-</ul>
-</div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="py-16 text-center">
-<h2 class="text-2xl font-bold mb-4">Talk to Us</h2>
-<p class="text-gray-600 mb-6">
-   Interested in early access or a pilot?
-</p>
-<form class="max-w-md mx-auto space-y-4">
-<input type="text" placeholder="Name"
-          class="w-full border px-4 py-2 rounded">
-<input type="email" placeholder="Email"
-          class="w-full border px-4 py-2 rounded">
-<textarea placeholder="Message"
-             class="w-full border px-4 py-2 rounded"></textarea>
-<button class="bg-blue-600 text-white px-6 py-2 rounded">
-     Submit
-</button>
-</form>
-</section>
+
+<!-- AOS INIT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out-cubic',
+    once: true
+  });
+</script>
+
 </body>
 </html>
